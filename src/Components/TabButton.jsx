@@ -3,6 +3,6 @@
 //     return <button onClick={onSelect}>{props.label}</button>
 // }
 // this is also used children funcion to get data
-export default function TabButton({children,onSelect}){
-    return <button onClick={onSelect}>{children}</button>
+export default function TabButton({children,onSelect,isSelected}){
+    return <button className={isSelected?'active':""} onClick={onSelect}>{children}</button>
 }
